@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg_left"
+        android:orientation="vertical">
+
+        <com.dalong.marqueeview.MarqueeView
+            android:id="@+id/tv_marquee"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:direction="left"
+            app:isRepeat="true"
+            app:speed="20"
+            app:startPoint="end"
+            app:textSize="12sp"
+            app:textcolor="#E72803" />
+
+        <com.example.icursoft_codertung.democanvas.MyMarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:mvAnimDuration="1000"
+            app:mvDirection="right_to_left"
+            app:mvInterval="3000"
+            app:mvTextColor="#000"
+            app:mvTextSize="14sp"
+            app:mvSingleLine="true"/>
+
+        <com.dalong.marqueeview.MarqueeView
+            android:id="@+id/tv_marquee1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:direction="left"
+            app:isRepeat="true"
+            app:speed="20"
+            app:startPoint="end"
+            app:textSize="12sp"
+            app:textcolor="#E72803" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="123"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
